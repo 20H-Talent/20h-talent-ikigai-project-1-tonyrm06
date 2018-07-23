@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #222;
+  color: #78909c;
   background: #f7f5f0;
 }
 /* Link Styles */
@@ -25,11 +25,19 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: rgb(92, 86, 86);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   text-align: center;
+}
+.tag-above{
+  color: rgb(152, 167, 17);
+
+
+list-style-type:none;
+padding: 0 0 10px 20px;
+margin: 0 0 0 -10px;
 }
 .nav {
   display: flex;
@@ -51,16 +59,19 @@ a:hover {
 .nav a {
   transition: all .5s;
 }
+
 .nav a:hover {
   color: white
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('https://placeimg.com/1000/500/nature') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  width: 1400px; 
+height: 500px;
 }
 header {
   line-height: 1.5;
@@ -71,10 +82,10 @@ header .profile-image {
   height: 150px;
   border-radius: 50%;
   border: 3px solid white;
-  transition: all .5s;
+  transition: all .15s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) rotate(30deg);
 }
 .tag {
   background-color: #efefef;
@@ -93,10 +104,11 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: rgba(115, 163, 177, 0.473);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  transition: all .5s;
+  transition: all .5s
+
 }
 .card:hover {
   border-color: #ff99ff;
@@ -151,9 +163,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
